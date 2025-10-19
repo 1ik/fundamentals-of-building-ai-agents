@@ -1,0 +1,8 @@
+langchain-openai==0.3.10
+langchain==0.3.21
+openai==1.68.2
+pandas==2.2.3
+numpy==1.26.4
+matplotlib==3.9.2
+seaborn==0.13.2
+scikit-learn==1.5.2
