@@ -27,6 +27,25 @@ Created two agents:
 1. `ToolCallingAgent` - general purpose
 2. `TipAgent` - calculates tips from natural language
 
+### 3. Chat with DataFrame (`chat-with-dataframe.py`)
+Built a data analysis agent that writes pandas/matplotlib code from natural language.
+
+**What I learned:**
+- `create_pandas_dataframe_agent` generates code dynamically (doesn't use predefined tools)
+- Flow: Ask question → LLM writes Python code → Code executes → Get result + visualization
+- Can inspect generated code via `intermediate_steps`
+
+**Key difference from tool-calling:**
+- Tool-calling: LLM picks from predefined functions
+- DataFrame agent: LLM writes new code for each question
+
+**Exercises completed:**
+- Parental education vs grades
+- Internet access impact on performance
+- Absences correlation with grades
+
+Dataset: Student alcohol consumption (395 students, 33 columns)
+
 ## Setup
 
 ```bash
