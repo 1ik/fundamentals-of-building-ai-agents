@@ -51,12 +51,14 @@ Dataset: Student alcohol consumption (395 students, 33 columns)
 ```bash
 # Install dependencies
 pip install langchain==0.3.25 langchain-openai==0.3.19 python-dotenv
+pip install langchain-experimental matplotlib seaborn tabulate
 
 # Add your API key to .env file
 echo "OPENAI_API_KEY=your-key-here" > .env
 
 # Run
 python3 interactive-tool-calling.py
+python3 chat-with-dataframe.py
 ```
 
 ## Notes
